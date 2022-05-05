@@ -1,4 +1,4 @@
-import os.path
+import os
 
 from flask import Flask, current_app, render_template, flash, redirect, url_for
 from flask_wtf import FlaskForm
