@@ -26,8 +26,8 @@ def post_doc():
     temp_dir = os.path.join(current_app.root_path, 'static/temp')
 
     if not os.path.exists(save_dir) and not os.path.exists(temp_dir):
-        os.mkdir(save_dir)
-        os.mkdir(temp_dir)
+        os.makedirs(save_dir)
+        os.makedirs(temp_dir)
 
     upload_form = UploadForm()
     if upload_form.validate_on_submit():
